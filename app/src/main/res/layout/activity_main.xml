@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/chatimg"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:hint="E-MAIL"
+        android:id="@+id/login_userid"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_marginTop="100dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:hint="PASSWORD"
+        android:id="@+id/login_pass"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="40sp"
+        android:text="Login"
+        android:textSize="25sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/login_btn"
+        android:background="@drawable/roundedbtn"/>
+
+    <ProgressBar
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginLeft="120dp"
+        android:visibility="invisible"
+        android:id="@+id/login_pb"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Don't have an account?"
+        android:textSize="25dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/login_signupbtn"
+        style="@android:style/Widget.Button.Small"
+        android:layout_width="130dp"
+        android:layout_height="40sp"
+        android:layout_marginLeft="50sp"
+        android:text="SIGNUP"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="25sp"
+        android:background="@drawable/roundedbtn"/>
+
+</LinearLayout>

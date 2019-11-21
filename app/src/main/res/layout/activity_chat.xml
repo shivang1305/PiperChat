@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/chatbgimg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:foregroundTint="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:orientation="vertical"></LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/chat_pb"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="0dp"
+                android:fadingEdge="horizontal|vertical"
+                android:foregroundTint="#03A9F4"
+                android:foregroundTintMode="src_atop"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        >
+    <EditText
+        android:id="@+id/txt_msg"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_edittxt"
+        android:hint=" Enter Message" />
+
+    <Button
+        android:id="@+id/sendbtn"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:background="@drawable/circled_btn"
+        android:text="Send"
+        android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
