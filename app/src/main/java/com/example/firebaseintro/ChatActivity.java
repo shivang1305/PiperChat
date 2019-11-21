@@ -84,7 +84,6 @@ public class ChatActivity extends AppCompatActivity {
             @Override
             public void onCancelled(DatabaseError error) {
                 // Failed to read value
-//                Log.w(TAG, "Failed to read value.", error.toException());
             }
         });
     }
@@ -127,9 +126,9 @@ public class ChatActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId()==R.id.chat_logout)
         {
+            finish();
             mAuth.signOut();
             startActivity(new Intent(ChatActivity.this,MainActivity.class));
-            finish();
         }
         else if(item.getItemId()==R.id.chat_exit)
         {
